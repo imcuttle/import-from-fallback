@@ -1,6 +1,6 @@
 {
   "name": "import-from-fallback",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Import a module like with `require()` but from some fallback directories",
   "author": "余聪 <yucong06@meituan.com>",
   "scripts": {
