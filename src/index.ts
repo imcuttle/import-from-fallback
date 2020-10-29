@@ -1,6 +1,6 @@
 /**
  * Import a module like with `require()` but from some fallback directories
- * @author 余聪
+ * @author imcuttle
  */
 import * as importFrom from 'import-from'
 

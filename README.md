@@ -1,7 +1,7 @@
 # import-from-fallback
 
-[![Build status](https://img.shields.io/travis/余聪/import-from-fallback/master.svg?style=flat-square)](https://travis-ci.org/余聪/import-from-fallback)
-[![Test coverage](https://img.shields.io/codecov/c/github/余聪/import-from-fallback.svg?style=flat-square)](https://codecov.io/github/余聪/import-from-fallback?branch=master)
+[![Build status](https://img.shields.io/travis/imcuttle/import-from-fallback/master.svg?style=flat-square)](https://travis-ci.org/imcuttle/import-from-fallback)
+[![Test coverage](https://img.shields.io/codecov/c/github/imcuttle/import-from-fallback.svg?style=flat-square)](https://codecov.io/github/imcuttle/import-from-fallback?branch=master)
 [![NPM version](https://img.shields.io/npm/v/import-from-fallback.svg?style=flat-square)](https://www.npmjs.com/package/import-from-fallback)
 [![NPM Downloads](https://img.shields.io/npm/dm/import-from-fallback.svg?style=flat-square&maxAge=43200)](https://www.npmjs.com/package/import-from-fallback)
 [![Prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)](https://prettier.io/)
@@ -46,8 +46,8 @@ importFromFallback.silent([process.cwd(), __dirname], 'not_found') // Return und
 
 ## Authors
 
-This library is written and maintained by 余聪, <a href="mailto:yucong06@meituan.com">yucong06@meituan.com</a>.
+This library is written and maintained by imcuttle, <a href="mailto:imcuttle@163.com">imcuttle@163.com</a>.
 
 ## License
 
-MIT - [余聪](https://github.com/余聪) 🐟
+MIT - [imcuttle](https://github.com/imcuttle) 🐟

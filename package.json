@@ -2,7 +2,7 @@
   "name": "import-from-fallback",
   "version": "1.0.1",
   "description": "Import a module like with `require()` but from some fallback directories",
-  "author": "余聪 <yucong06@meituan.com>",
+  "author": "imcuttle <imcuttle@163.com>",
   "scripts": {
     "test": "npx ava",
     "test:watch": "npm test -- --watch",
@@ -33,7 +33,7 @@
     "src"
   ],
   "keywords": [
-    "余聪",
+    "imcuttle",
     "import",
     "from",
     "fallback",
@@ -42,7 +42,7 @@
   "main": "lib",
   "types": "types",
   "license": "MIT",
-  "repository": "余聪/import-from-fallback",
+  "repository": "imcuttle/import-from-fallback",
   "ava": {
     "files": [
       "__tests__/**/*.test.ts{,x}"
