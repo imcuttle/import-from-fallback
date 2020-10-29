@@ -21,7 +21,16 @@ yarn add import-from-fallback
 
 ```javascript
 const importFromFallback = require('import-from-fallback')
+const requireLocal = (id) => importFromFallback([process.cwd(), __dirname], id)
+
+requireLocal('react') // Find react from `process.cwd()` or `__dirname`
+
+requireLocal('not_found') // Throw MODULE_NOT_FOUND error
+
+importFromFallback.silent([process.cwd(), __dirname], 'not_found') // Return undefined
 ```
+
+## Related
 
 ## Contributing
 

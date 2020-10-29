@@ -4,7 +4,7 @@
  */
 import * as importFrom from 'import-from'
 
-const requireFallbacks = (fallbacks: string[], id: string) => {
+function importFallbacksInner(fallbacks: string[], id: string, silent: boolean): unknown {
   for (const fallback of fallbacks) {
     const result = importFrom.silent(fallback, id)
     if (!!result) {
@@ -12,10 +12,15 @@ const requireFallbacks = (fallbacks: string[], id: string) => {
     }
   }
 
-  const err = new Error(`Cannot find module '${id}' in \n${fallbacks.map((dir) => `- ${dir}`).join('\n')}`)
-  // @ts-ignore
-  err.code = 'MODULE_NOT_FOUND'
-  throw err
+  if (!silent) {
+    const err = new Error(`Cannot find module '${id}' in \n${fallbacks.map((dir) => `- ${dir}`).join('\n')}`)
+    // @ts-ignore
+    err.code = 'MODULE_NOT_FOUND'
+    throw err
+  }
 }
 
-export = requireFallbacks
+const importFallbacks = (fallbacks: string[], id: string) => importFallbacksInner(fallbacks, id, false)
+importFallbacks.silent = (fallbacks: string[], id: string) => importFallbacksInner(fallbacks, id, true)
+
+export = importFallbacks
